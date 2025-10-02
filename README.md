@@ -7,6 +7,7 @@
 1. Install dependencies
 
 ```bash
+# Python version: 3.12.0
 pip install -r requirements.txt
 pip install -r requirements_test.txt
 ```
