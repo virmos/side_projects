@@ -4,3 +4,4 @@ node_modules
 src/static/testcase.txt
 __pycache__/
 .pytest_cache
+htmlcov
