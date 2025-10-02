@@ -5,3 +5,4 @@ src/static/testcase.txt
 __pycache__/
 .pytest_cache
 htmlcov
+package-lock.json
