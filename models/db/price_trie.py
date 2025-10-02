@@ -4,6 +4,8 @@ from typing import Dict, Optional, Tuple
 
 from typing import Dict, Iterable, List, Mapping, Optional, Protocol
 from math import inf
+
+import loguru
 from models.db.types import IPriceDB
 from models.schemas.pricing import PriceEntry
 
@@ -39,8 +41,8 @@ class TriePrice:
             if not node.get_child(num):
                 node.set_child(num, TrieNode())
             node = node.get_child(num)
-            node.operator_to_price[operator] = price    
-            node.supported_operators.append(operator)
+        node.operator_to_price[operator] = price
+        node.supported_operators.append(operator)
 
     """Runtime: O(m*11)
     m is num operators

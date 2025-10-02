@@ -1,11 +1,9 @@
 import fastapi
 
-from api.dependencies import get_loader, get_repository, get_repository_with_provider
+from api.dependencies import get_repository_with_provider
 from models.db.price_trie import TriePriceDB
 from models.schemas.pricing import CheapestOut, PhoneNumberIn
 from repository.crud.pricing import PricingRepository
-from services.price_loader import TextPriceListLoader
-from services.types import IPriceListLoader
 
 
 router = fastapi.APIRouter(prefix="/pricing", tags=["pricing"])
