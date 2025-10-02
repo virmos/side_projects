@@ -1,0 +1,7 @@
+Query results (number -> (Operator, price, matched_prefix)):
+
+4673212345 -> (Operator A, 0, 'A')
+4612345678 -> (Operator A, 0, 'A')
+441234567890 -> (Operator A, 0, 'A')
+1234567890 -> (Operator A, 0, 'A')
+9999999 -> (Operator A, 0, 'A')
